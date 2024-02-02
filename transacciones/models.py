@@ -37,4 +37,4 @@ class Interfisa(models.Model):
     interfisaImg = models.ImageField(upload_to='interfisa/', null=True, blank=True)
 
     def __str__(self) ->str:
-        return f"{self.cliente} {self.billetera}"
+        return f"{self.cliente}-{self.monto}"
