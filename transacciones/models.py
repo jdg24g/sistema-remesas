@@ -24,7 +24,7 @@ class Giros(models.Model):
     girosImg = models.ImageField(upload_to='giros/', null=True, blank=True)
 
     def __str__(self) ->str:
-        return f"{self.cliente} {self.billetera} {self.ref}"
+        return f"{self.cliente} -- {self.billetera} -- {self.monto}"
     
 
 
